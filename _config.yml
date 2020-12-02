@@ -1,14 +1,14 @@
-title:              지식을 나누다
+title:              BrandPark의 교실
 email:              alsrhs0530@gmail.com
-description:        개발을 하면서 나만 알고있기 아까운 것들을 나눈다.
-author:             Start Bootstrap
+description:        Spring, Java를 사용하며 알게 된 기술을 익히고 공유합니다.
+author:             ParkMinGon
 baseurl:            # #
-url:                "https://kkm2005.github.io"
+url:                "https://BrandPark.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
+twitter_username:   
+github_username:    BrandPark
+facebook_username:  
 instagram_username:  
 linkedin_username:
 
