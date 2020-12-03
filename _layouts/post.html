@@ -35,7 +35,7 @@ layout: default
         {{ content }}
 
         <hr>
-
+		
         <div class="clearfix">
 
           {% if page.previous.url %}
@@ -48,7 +48,12 @@ layout: default
           {% endif %}
 
         </div>
-
+		{% if page.comments != false %}
+			{% include disqus_comments.html %}
+		{% endif %}
+		<script id="dsq-count-scr" src="//brandpark-blog.disqus.com/count.js" async></script>
       </div>
     </div>
   </div>
+  
+  
