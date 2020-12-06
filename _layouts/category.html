@@ -26,11 +26,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+        {% for post in site.categories[page.category] %}
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -62,7 +58,7 @@ layout: default
         </div>	
       </div>
 	  <div class="col-lg-4 col-md-2">
-		<ul>
+		<ul class="category">
 		{% for category in site.categories %}
 			<li {% if category[0] == page.category %}class="active"{% endif %}><a href="/category/{{ category | first }}"> {{ category | first }} ({{ category | last | size }})</a></li>
 		{% endfor %}

@@ -4,6 +4,8 @@ description:        Spring, Java를 사용하며 해결했던 기술을 익히�
 author:             자바마니또
 baseurl:            # #
 url:                "https://BrandPark.github.io"
+category_dir: category/
+tag_dir: tag/
 
 # Social Profiles
 twitter_username:   
