@@ -5,16 +5,19 @@
 {% include head.html %}
 
 <body>
+	{% include sidebar.html %}
+	{% include navbar.html %}
+	<div style="margin-left:50px">
+		
 
-  {% include navbar.html %}
+		{{ content }}
 
-  {{ content }}
+		{% include footer.html %}
 
-  {% include footer.html %}
+		{% include scripts.html %}
 
-  {% include scripts.html %}
-
-  {% include google-analytics.html %}
+		{% include google-analytics.html %}
+	</div>
 
 </body>
 
