@@ -1,10 +1,11 @@
-@import "styles";
+
+
 .sidebar {
   overflow: hidden;
   position: fixed;
-  transform: translateX(-350px);
+  transform: translateX(-300px);
   height: 100vh;
-  width: 400px;
+  width: 350px;
   transition: all 800ms cubic-bezier(.8, 0, .33, 1);
   z-index: 1040;
   border-radius: 50%;
@@ -15,8 +16,24 @@
   transform: translateX(0px);
   border-radius: 0% 0% 0% 0%;
   background: rgb(48, 48, 48);
+  box-shadow: 0 30px 80px 0 rgba(97,45,45,0.25);
 }
-
+.blur{
+  opacity: 0;
+  position:fixed;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+}
+.blur.show{
+  /*background:rgba(94, 88, 88,0.4);*/
+  opacity: 1;
+  transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+  /*background-color: rgba(224, 221, 209, 0.7)*/
+  pointer-events: none;
+}
 .sidebar .menu-btn {
   position: absolute;
   top: 50%;
@@ -39,17 +56,20 @@
 
 .sidebar .menu-btn .line.line--1 {
   transform: rotate(45deg) translateY(-5px);
-  
 }
+
 
 .sidebar .menu-btn .line.line--1.line-cross {
   transform: rotate(-45deg) translateY(-5px);
   background: rgb(206, 206, 206);
 }
 
+
 .sidebar .menu-btn .line.line--2 {
   transform: rotate(-45deg) translateY(5px);
 }
+
+
 
 .sidebar .menu-btn .line.line--2.line-cross {
   transform: rotate(45deg) translateY(5px);
@@ -64,11 +84,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   transform: translateX(-100px);
   opacity: 0;
   transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-left: 20px;
 }
 
 .sidebar .nav-links.fade-in {
@@ -80,11 +102,14 @@
   margin: 20px 0;
   text-decoration: none;
   font-family: sans-serif;
-  color: rgba(161, 161, 161, 0.6);
+  color: rgba(202, 202, 202, 0.6);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 25px;
   transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+.sidebar .nav-links .active {
+  color: rgb(255, 255, 255);
 }
 
 .sidebar .nav-links .link:hover {
