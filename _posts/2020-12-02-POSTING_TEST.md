@@ -10,3 +10,9 @@ background: '/img/bg-post.jpg'
 
 
 ## Post Test
+
+``` javascript
+function syntax){
+}
+
+```
