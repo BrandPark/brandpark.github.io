@@ -22,7 +22,7 @@ markdown:           kramdown
 
 kramdown:
         input: GFM
-        highlighter: rouge
+        syntax_highlighter: rouge
         
         syntax highlighter_opts:
             css_class: 'highlight'
