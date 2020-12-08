@@ -3,7 +3,7 @@ email:              alsrhs0530@gmail.com
 description:        Spring, Java를 사용하며 해결했던 기술을 익히고 공유합니다.
 author:             자바마니또
 baseurl:            # #
-url:                "https://BrandPark.github.io"
+url:                "https://brandpark.github.io"
 category_dir: category/
 tag_dir: tag/
 
