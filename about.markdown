@@ -1,20 +1,50 @@
 ---
 layout: page
-title: About Me
-description: This is what I do.
+title: I am ... 
+description: 나는 누구인가 ...
 background: '/img/bg-about.jpg'
 permalink: /about/
 ---
+> ## 시작의 이유
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+어느 날 문득 그런생각이 들었습니다. ```"좋은 개발자는 무엇인가?"```
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+한참 고민하다 내린 저의 개발자에 대한 정의는 ``` '개발자는 자신이 아닌 타인에게 필요한 것을 제공해 줄수 있는 사람' ``` 입니다.  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+자신을 위한 개발은 자신이 필요한 것을 만들기에 비교적 쉽습니다. 
+
+하지만 다른사람이 필요한 것을 만들기 위해서는 그 사람의 생각과 상황을 깊이 이해하고 그 안에서 솔루션을 제공해야 하기에 어렵습니다. 완벽한 솔루션이라면 더더욱.
+
+블로그 운영도 개발과 마찬가지라는 생각이 들었습니다. 
+
+많은 개발자가 구글링을 통해 자신이 원하는 정보를 쉽게 찾지만, 다른사람이 원하는 정보를 제공하는 것은 많은 노력과 시간이 들어가기에 쉽지 않습니다. 
+
+그래서 저는 이 블로그를 만들었습니다. 
+
+대학 생활 내내 나를 위한 공부만 했던 과거의 나를 탈피하고, 내가 배운 내용을 공유하며 넷 상의 다수의 개발자와 같이 성장해 나가고 싶은 마음에 블로그를 만들게 되었습니다.
 
 
-[jekyll-organization]: https://github.com/jekyll
+> ## 이름의 의미
+
+'자바마니또' 라는 이름은 JAVA와 마니또를 합친 말입니다.
+
+비밀친구라는 뜻의 마니또 처럼 도움이 필요할 때 도움을 줄 수 있는 넷상의 친구가 되고싶다는 의미입니다.
+
+
+> ## Blog 컨셉
+
+저의 블로그의 목적은 초등학생도 쉽게 찾을 수 있는 개념설명을 하기 위해 만든 것이 아니라,
+
+저와 같은 고민을 하는 사람들을 위해서 먼저 문제에 대해 고찰하여 그 과정에서 얻은 내용을 공유 하는 것입니다.
+
+제 글을 보고 궁금하신 거나 잘못된 점이 있다면 댓글로 꼭 달아주시면 감사하겠습니다.
+
+> ## 관심 분야
+
+언어는 JAVA, 프레임워크는 Spring에 관심이 많고 깔끔한 코드 구조에도 관심이 많습니다.
+
+저의 꿈은 많은 사람들이 사용하는 웹 서비스를 개발해보는 것이 꿈입니다. 
+
+
+
+
