@@ -1,152 +1,48 @@
-# [Start Bootstrap - Clean Blog Jekyll](https://startbootstrap.com/themes/clean-blog-jekyll/) - Official Jekyll Version
+> ## 시작의 이유
 
-[Clean Blog Jekyll](https://startbootstrap.com/themes/clean-blog-jekyll/) is a stylish, responsive blog theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working contact form powered by [Formspree](https://formspree.io/).
+어느 날 문득 그런생각이 들었습니다. ```"좋은 개발자는 무엇인가?"```
 
-This repository holds the official Jekyll version of the Clean Blog theme on Start Bootstrap!
+한참 고민하다 저는 결론을 내렸습니다.
 
-## Preview
+``` "개발자는 자신이 아닌 타인에게 필요한 것을 제공해 줄수 있는 사람이다." ``` 
 
-[![Clean Blog (Jekyll) Preview](https://startbootstrap.com/assets/img/screenshots/themes/clean-blog-jekyll.png)](http://StartBootstrap.github.io/startbootstrap-clean-blog-jekyll/)
+자신을 위한 개발은 자신이 필요한 것을 만들기에 쉽습니다.
 
-**[View Live Preview](http://StartBootstrap.github.io/startbootstrap-clean-blog-jekyll/)**
+하지만, 다른사람이 필요한 것을 만들기 위해서 그 사람의 생각과 상황을 깊이 이해하고 
 
-## Installation & Setup
+그 안에서 솔루션을 제공해야 하기에 어렵습니다. 완벽한 솔루션이라면 더더욱.
 
-### Using RubyGems
+블로그 운영도 개발과 마찬가지라는 생각이 들었습니다. 
 
-When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
+많은 개발자가 구글링을 통해 자신이 원하는 정보를 쉽게 찾지만, 다른사람이 원하는 정보를 제공하는 것은 많은 노력과 시간이 들어가기에 쉽지 않습니다. 
 
-1. (Optional) Create a new Jekyll site: `jekyll new my-site`
-2. Replace the current theme in your `Gemfile` with `gem "jekyll-theme-clean-blog"`.
-3. Install the theme (run the command inside your site directory): `bundle install`
-4. Replace the current theme in your `_config.yml` file with `theme: jekyll-theme-clean-blog`.
-5. Build your site: `bundle exec jekyll serve`
+그래서 저는 이 블로그를 만들었습니다. 
 
-Assuming there are no errors and the site is building properly, follow these steps next:
+대학 생활 내내 나를 위한 공부만 했던 과거의 나를 탈피하여 내가 배운 내용을 공유하고,
 
-1. Create the following pages if they do not exist already (or change the extension of existing markdown files from `.md` to `.html`):
+넷 상의 다수의 개발자와 같이 성장해 나가고 싶은 마음에 블로그를 만들게 되었습니다.
 
-   * `index.html` - set to `layout: home`
-   * `about.html` - set to `layout: page`
-   * `contact.html` - set to `layout: page`
-   * `posts/index.html` - set to `layout: page` (you will also need to create a `posts` directory)
+> ## 이름의 의미
 
-2. Configure the `index.html` front matter. Example:
+'자바마니또' 라는 이름은 JAVA와 마니또를 합친 말입니다.
 
-    ```markdown
-    ---
-    layout: home
-    background: '/PATH_TO_IMAGE'
-    ---
-    ```
+비밀친구라는 뜻의 마니또 처럼 도움이 필요할 때 도움을 줄 수 있는 넷상의 친구가 되고싶다는 의미입니다.
 
-3. Configure the `about.html`, `contact.html`, and `posts/index.html` front matter. Example:
 
-    ```markdown
-    ---
-    layout: page
-    title: Page Title
-    description: This is the page description.
-    background: '/PATH_TO_IMAGE'
-    ---
-    ```
+> ## 블로그 컨셉
 
-4. For each post in the `_posts` directory, update the front matter. Example:
+초등학생도 쉽게 찾을 수 있는 개념설명이 아닌
 
-    ```markdown
-    ---
-    layout: post
-    title: "Post Title"
-    subtitle: "This is the post subtitle."
-    date: YYYY-MM-DD HH:MM:SS
-    background: '/PATH_TO_IMAGE'
-    ---
-    ```
+저와 같은 고민을 하는 사람들을 위해서 먼저 문제에 대해 고찰하여 내린 답을 공유하기 위한 블로그입니다.
 
-    For reference, look at the [demo repository](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) to see how the files are set up.
+제 글을 보고 궁금하신 거나 잘못된 점이 있다면 댓글로 꼭 달아주시면 감사하겠습니다.
 
-5. Add the form to the `contact.html` page. Add the following code to your `contact.html` page:
+> ## 관심 분야
 
-    ```html
-    <form name="sentMessage" id="contactForm" novalidate>
-      <div class="control-group">
-        <div class="form-group floating-label-form-group controls">
-          <label>Name</label>
-          <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="form-group floating-label-form-group controls">
-          <label>Email Address</label>
-          <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-          <label>Phone Number</label>
-          <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="form-group floating-label-form-group controls">
-          <label>Message</label>
-          <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <br>
-      <div id="success"></div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-      </div>
-    </form>
-    ```
+언어는 JAVA, 프레임워크는 Spring에 관심이 많고 깔끔한 코드 구조에도 관심이 많습니다.
 
-    Make sure you have the `email` setting in your `_config.yml` file set to a working email address! Once this is set, fill out the form and then check your email, verify the email address using the link sent to you by Formspree, and then the form will be working!
+저의 꿈은 많은 사람들이 사용하는 웹 서비스를 개발해보는 것이 꿈입니다. 
 
-6. Build your site: `bundle exec jekyll serve`
 
-### Using Core Files
 
-When using the core files, the demo images, posts, and pages are all included with the download. After following the instructions below, you can then go and change the content of the pages and posts.
 
-1. [Download](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/archive/master.zip) or Clone the repository.
-2. Update the following configuration settings in your `_config.yml` file:
-   - `baseurl`
-   - `url`
-   - `title`
-   - `email` (after setting this setting to a working email address, fill out the form on the contact page and send it - then check your email and verify the address and the form will send you messages when used)
-   - `description`
-   - `author`
-   - `twitter_username` (Optional)
-   - `facebook_username` (Optional)
-   - `github_username` (Optional)
-   - `linkedin_username` (Optional)
-   - `instagram_username` (Optional)
-3. Build your site: `bundle exec jekyll serve`
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/issues) here on GitHub!
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**.
-
-* <http://davidmiller.io>
-* <https://twitter.com/davidmillerskt>
-* <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/blob/gh-pages/LICENSE) license.
