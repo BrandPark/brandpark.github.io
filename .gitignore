@@ -6,7 +6,6 @@ _site
 node_modules
 Gemfile.lock
 *.gem
-JEKYLL_README.md
 
 ### NPM ###
 /node_modules/
