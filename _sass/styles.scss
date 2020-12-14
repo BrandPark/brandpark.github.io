@@ -1,2 +1,12 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/clean-blog.scss";
+
+@import url(http://fonts.googleapis.com/css?family=Nanum+Gothic:400,700);
+
+
+/* Style Blog Font */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, code {
+  margin-bottom: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
