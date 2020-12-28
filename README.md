@@ -23,4 +23,4 @@
 넷 상의 다수의 개발자와 같이 성장해 나가고 싶은 마음에 블로그를 만들게 되었습니다.
 
 > ## 블로그 주소
-* [자바마니또의 Tech](brandpark.github.io)
+* [자바니또의 Tech](brandpark.github.io)
