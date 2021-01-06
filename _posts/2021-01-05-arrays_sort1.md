@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "[ JAVA ] Arrays.sort()의 내부 동작"
+title: "[ JAVA ] Arrays.sort()의 내부 동작(1)"
 <!-- date:   2020-12-06 11:56:00 +0900 -->
 subtitle: "- DualPivotQuicksort"
 categories: ['java']
@@ -12,7 +12,7 @@ sitemap :
 ---
 ## 개요
 ---
-알고리즘 공부를 하다 Arrays.sort()와 Collections.sort()의 내부는 어떤 정렬을 사용하는지 궁금해졌다. 공부한 결과부터 말하자면 Arrays.sort는 인자의 타입이 `원시타입(PrimitiveType)`인 경우에는 `DualPivotQuicksort`가, `Object Type`인 경우에는 `TimSort`가 사용된다. 이번 포스팅에서는 `DualPivotQuicksort`에 대해 알아보자. (JAVA 11기준으로 작성하였다.)
+알고리즘 공부를 하다 Arrays.sort()와 Collections.sort()의 내부는 어떤 정렬을 사용하는지 궁금해졌다. 공부한 결과부터 말하자면 Arrays.sort는 인자의 타입이 `원시타입(PrimitiveType)`인 경우에는 `DualPivotQuicksort.sort()`가, `Object Type`인 경우에는 `TimSort.sort()`가 사용된다. 이번 포스팅에서는 `DualPivotQuicksort.sort()`에 대해 알아보자. (JAVA 11기준으로 작성하였다.)
 
 &nbsp;
 
@@ -26,9 +26,11 @@ int타입의 배열을 인자로 호출한 sort메서드이다. 내부적으로 
 
 <p align="center"><img src="{{site.url}}/img/content-img/java/list_sort3.png" style="width:70%" alt="img3"></p>
 
+위는 전역변수들과 `DualPivotQuicksort.sort()`이다. `DualPivotQuickSort.sort()`는 사실 클래스 이름과 다르게 DualPivotQuickSort말고도 MergeSort, InsertionSort, CountingSort를 가지고 있고, 배열에 크기마다 다르게 적용한다. 정렬의 방법을 달리하는 배열의 크기기준은 아래와 같다. 
+
 <p align="center"><img src="{{site.url}}/img/content-img/java/list_sort4.png" style="width:70%" alt="img4"></p>
 
-위는 전역변수들과 `DualPivotQuicksort.sort()`이다. 전역변수들의 설명을 해석해보면 `DualPivotQuicksort.sort()`는 배열의 크기에 따라 다음과 같이 정렬 방법을 다르게 한다는 것을 알 수 있다. (현재 디버깅하고있는 배열의 크기는 QuickSort를 수행하도록 설정했다.)
+전역변수들의 설명을 해석해보면 `DualPivotQuicksort.sort()`는 배열의 크기에 따라 다음과 같이 정렬 방법을 다르게 한다는 것을 알 수 있다. (현재 디버깅하고있는 배열의 크기는 QuickSort를 수행하도록 설정했다.)
 
 * 배열의 크기가 286이상일 경우 `MergeSort`를 수행한다.
 
